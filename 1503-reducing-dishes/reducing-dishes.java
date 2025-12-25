@@ -4,7 +4,7 @@ class Solution {
 
     public static int solve(int[] satisfaction , int idx , int ptr){
 
-        if(idx == satisfaction.length){
+        if(idx >= satisfaction.length){
 
             return 0;
 
