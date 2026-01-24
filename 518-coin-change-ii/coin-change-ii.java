@@ -12,7 +12,7 @@ class Solution {
 
         if(dp[idx][ca] != -1) return dp[idx][ca];
 
-        if(coins[idx] > amount) return solve(amount , coins , idx + 1 , ca);
+        // if(coins[idx] > amount) return solve(amount , coins , idx + 1 , ca);
 
         int take = solve(amount , coins , idx , ca + coins[idx]);
         int skip = solve(amount , coins , idx + 1 , ca);
