@@ -1,25 +1,14 @@
 class Solution {
     public boolean checkOnesSegment(String s) {
 
-        int idx = -1;
+        int idx = 0;
 
-        for(int i = 0 ; i < s.length() ; i++){
+        while(idx != s.length() && s.charAt(idx) == '1'){
 
-            if(s.charAt(i) == '1'){
+            idx++;
 
-                idx = i;
-
-                while(idx != s.length() && s.charAt(idx) == '1'){
-
-                    idx++;
-
-                }
-
-            }
-
-            if(idx != -1) break;
-            
         }
+
 
         for(int i = idx ; i < s.length() ; i++){
 
