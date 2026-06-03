@@ -4,8 +4,12 @@ class Solution {
 
     public int earliestFinishTime(int[] la, int[] lb, int[] wa, int[] wb) {
 
-        int l = MAX, w = MAX, minL = MAX, minW = MAX;
-        int n = la.length, m = wa.length;
+        int l = MAX;
+        int w = MAX;
+        int minL = MAX;
+        int minW = MAX;
+        int n = la.length;
+        int m = wa.length;
 
         for(int i = 0; i < n; ++i) l = Math.min(l, la[i] + lb[i]);
 
